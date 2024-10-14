@@ -1,0 +1,16 @@
+h1 {
+  color: rgb(24, 217, 217);
+}
+p {
+  color: pink;
+  background-color: rgb(86, 116, 116);
+}
+#heading {
+    color: gold;
+}
+/*
+b {
+    color: pink;
+    background-color: rgb(86, 116, 116);
+  }*/
+/* use colours that give us good feel  */

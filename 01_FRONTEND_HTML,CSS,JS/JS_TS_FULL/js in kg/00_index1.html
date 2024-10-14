@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js oneshot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ME -THARUN</h1>
+        <button id="aboutme" onclick="alert('aboutme')">about me</button>
+        <!-- its like inline js -->
+    </header>
+    <main>
+        <br>
+        <hr><hr>
+        <h1>practice set-1</h1>
+
+        <button class="btns1" id="click-me">click</button>
+
+        <button class="btns1 btns2" id="btn1" 
+            onclick="alert('added to back');
+                    a = a+1;
+                    cardquantity.innerText =`you added ${a} bags`">
+        add to bag</button>
+
+        <button class="btns1 btns2" id="btn2"
+            onclick="console.log('added to list');alert('added to list');a = a-1;
+            cardquantity.innerText =`you added ${a} bags`">Wishlist</button>
+            <!-- ❣️wishlist -->
+
+        <button class="btns1 btns2" id="2" onclick="alert('added to back'); a= a+2;
+        cardquantity.innerText =`you added ${a} bags`">1+1 adding bag</button>
+
+        <h1 id="addedquantity">your added 0 bags</h1>
+        <p>for practice set 1,2---revisom of html css and basic js</p>
+        <br>
+        <hr><hr>
+
+    </main>
+
+
+    <!-- its like external linking external js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

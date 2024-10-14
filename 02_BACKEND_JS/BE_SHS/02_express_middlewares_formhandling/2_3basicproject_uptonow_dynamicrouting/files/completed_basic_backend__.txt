@@ -1,0 +1,3 @@
+notes taking project
+got to know many things like 
+ejs, ecma, fs, express, postman

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lv4_basics</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        #paddingcheck{
+            background-color: antiquewhite;
+            height: 50px;
+            width: 50px;
+            /* padding: 10px; */
+            padding: 5px 50px 500px 15px;
+            /* margin: 10px; */
+            margin: 5px 10px 100px 150px;
+            border: 2px dashed palegreen;
+            border-radius: 15px;
+            /* box-sizing: border-box; */
+        }
+        #margin{
+            background-color: aquamarine;
+            padding: 10px 10px 10px 10px ;
+            margin: 10px;
+            text-align: center;
+            text-decoration: dashed;
+            text-transform: capitalize;
+            border-color: rgb(66, 128, 183);
+            border-width: 20px;
+            border-style: double;
+            border-radius: 40px;
+        }
+        .pad{
+            height: 50px;
+            height: 50px;
+            padding: 2px;
+            border: 5px solid black;
+        }
+        #first{
+            margin: 15px 5px 150px 5px;
+            /* margin: 15px 5px 15px 5px; */
+            background-color: palegoldenrod;
+            border-radius: 3px 4px 5px 50px;
+        }
+        #second{
+            margin: 50px 5px 5px 5px;
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+<body>
+    <div id="paddingcheck">
+        boxmodel <hr>hello 
+    </div>
+    <div id="margin">
+        margin checker
+    </div>
+    <div id="first" class="pad">
+        first
+    </div>
+    <div id="second" class="pad">
+        second
+    </div>
+</body>
+</html>

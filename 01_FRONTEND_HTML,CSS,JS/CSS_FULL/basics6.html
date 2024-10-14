@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lv6_basics</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;        }
+        #cont{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            padding: 3px;
+            margin: 2px;
+        }
+        #box1,#box2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(212, 106, 106);
+            border: 2px solid black;
+        }
+        #box1{
+            float: right;
+            background-color: aquamarine;
+        }
+        #box2{
+            float: left;
+            /* default will be none */
+        }
+        .box{
+            height: 100px;
+            width: 100px; 
+            /* USED FOR before flex wrap example checking */
+            /* height: 150px;
+            width: 150px; */
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color: antiquewhite;
+        }
+        #container{
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            background-color: aliceblue;
+            margin: 15px;
+            padding: 20px;
+
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            justify-content: center;
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+            flex-wrap: wrap;
+            /* align-items: baseline; */
+            /* align-items: center; */
+            align-items: start;
+            /* align-content: center; */
+            /* align-content: baseline; */
+
+            /* uptoknow above all are FLEX container props */
+
+
+        }
+        h1{
+            text-align: center;
+        }
+        #boox1{
+            background-color: palegoldenrod;
+            order: 2;
+        }
+        #boox2{
+            background-color: rgb(207, 145, 101);
+            order: 1;
+        }
+        #boox3{
+            background-color: rgb(125, 181, 203);
+            /* align-self: auto; */
+            /* align-self: self-end; */
+            align-self: flex-end;
+            /* align-self: flex-start; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 3; */
+            order: 4;
+        }
+        #boox4{
+            background-color: rgb(221, 125, 165);
+            order: 3;
+        }
+        #container1{
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            background-color: rgb(102, 174, 237);
+            margin: 15px;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        #booxx1{
+            background-color: darkcyan;
+            grid-row: 1/ 2;
+            grid-column:1 / 2;
+        }
+        #booxx2{
+            background-color:rgb(63, 63, 179);
+            grid-row: 1/ 2;
+            grid-column:2 / 2;
+        }
+        #booxx3{
+            background-color: rgb(177, 201, 80);
+            grid-row: 2/ 2;
+            grid-column:1 / 2;
+        }
+        #booxx4{
+            background-color: rgb(175, 74, 138);
+            grid-row: 2/ 2;
+            grid-column:2 / 2;
+        }
+        .boox{
+            height: 100px;
+            width: 100px; 
+            /* USED FOR before flex wrap example checking */
+            /* height: 150px;
+            width: 150px; */
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+            background-color: antiquewhite;
+        }
+        @media screen and (max-width: 300px) and (max-width: 500px){
+            .boox{
+                background-color: rgb(249, 16, 16);
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>FLOAT PROP</h1>
+    <div id="cont">
+        <div id="box1">box1</div>        
+        <div id="box2">box2</div>        
+    </div><br><hr><br>
+    <h1>FLEX BOX PROP</h1>
+    <div id="container">
+        <div id="boox1" class="box">flex item1</div>        
+        <div id="boox2" class="box">flex item2</div>        
+        <div id="boox3" class="box">flex item3</div>        
+        <div id="boox4" class="box">flex item4</div>        
+        <!-- <div id="boox5" class="box">flex item5</div>        
+        <div id="boox6" class="box">flex item6</div>        
+        <div id="boox7" class="box">flex item7</div>        
+        <div id="boox8" class="box">flex item8</div>         -->
+    </div><br><hr><br>
+    <h1>GRID PROP</h1>
+    <div id="container1">
+        <div id="booxx1" class="box">grid item1</div>        
+        <div id="booxx2" class="box">grid item2</div>        
+        <div id="booxx3" class="box">grid item3</div>        
+        <div id="booxx4" class="box">grid item4</div>        
+    </div><br><hr><br>
+    <h1>MEDIA QUIERES</h1>
+    <div class="boox">just box </div>
+</body>
+</html>

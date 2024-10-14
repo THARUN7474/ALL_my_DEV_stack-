@@ -1,0 +1,28 @@
+#cont{
+    height: 25px;
+    width: 90%;
+    background-color: antiquewhite;
+    border: 2px solid;
+    border-radius: 20px;
+    /* padding: 2px; */
+    /* margin: 2px; */
+    position: relative;
+    left: 4%;
+}
+#ind{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(252, 146, 7);
+    border: 2px solid;
+    border-radius: 20px;
+    /* padding: 2px; */
+    /* margin: 2px; */
+
+    animation: animate_progress 3s ease-in 1ms 5;
+}
+@keyframes animate_progress {
+    0% { width: 0%;}
+    90% {width: 90%;}
+    95% {width: 70%;}
+    100% {width: 100%;}
+}

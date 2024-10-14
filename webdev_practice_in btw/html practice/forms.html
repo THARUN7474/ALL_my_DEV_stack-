@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="name">enter name :</label>
+            <input type="text"
+            placeholder="enter name" 
+            id="name" 
+            name="names">
+        </div>
+        <div>
+            <label for="roll">enter rollno :</label>
+            <input type="number" 
+            placeholder="999999" 
+            id="roll"
+            name="rollno">
+        </div>
+        <button>submit</button>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+    <!-- here input data(value we enter) is submiting to youtube server as name is given of its then it request and give us output -->
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="search in google">
+        <button>search</button>
+    </form>
+
+    <form action="/server">
+        <div>
+            <input type="checkbox" name="age" id="age">
+            <label for="age">i am 18+</label>
+            <input type="checkbox" name="age1" id="age1" checked>
+            <label for="age1">i am 21+</label>
+            <hr>
+            choose your subjects
+            <input type="checkbox" name="subject" id="maths">
+            <label for="maths">maths</label>
+            <input type="checkbox" name="subject" id="science" value="science">
+            <label for="science">science</label>
+            <input type="checkbox" name="subject" id="biology" value="bio">
+            <label for="biology">bio</label>
+            <input type="checkbox" name="subject" id="chemistry">
+            <label for="chemistry">chem</label>
+            <button>submit</button>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <!-- name value pair.....in url it gets like sex=boy if boy ticts   -->
+            <!-- here as name for 3 same it is grouping and value attribute for displaying in url which is ticked -->
+            <input type="radio" name="hi" id="sex" "value=""boy">
+            <label for="sex">boy</label>
+            <input type="radio" name="hi" id="sex" "value=""girl">
+            <label for="sex">girl</label>
+            <input type="radio" name="hi" id="sex" "value=""gay">
+            <label for="sex">gay</label>
+            <input type="radio" name="hi1" id="sex" "value=""gay">
+            <label for="sex">gay</label>
+            <button>submit</button>
+        </div>
+        <hr>
+        <div>
+            chooose your profession:
+            <select name="profession" id="profession ">
+                <option value="">select your profession</option>
+                <option value="none" selected>none</option>
+                <option value="student">student</option>
+                <option value="devlp">fullstack devlp</option>
+                <option value="app devlp">app develp</option>
+                <option value="web devlp">web devlp</option>
+            </select>
+            <button>submit</button>
+        </div>
+    </form>
+    <form action="/server">
+        <div>
+            level in range
+            <label for="volu">volume</label>
+            <input type="range" min="0" max="1000" name="vol" id="volu">
+            <label for="intese">intesity</label>
+            <input type="range" min="0" max="1000" name="light" id="intese" value="400">
+            <label for="volum">volume2</label>
+            <input type="range" min="0" max="1000" name="volm" id="volum" step="10">
+            <button>submit</button>
+        </div>
+        <br>
+        <hr>
+        <label for="feedback">provide your feedback:</label>
+        <textarea name="con" id="feedback" cols="30" rows="10" placeholder="write your feedback"></textarea>
+        <button>submit</button>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <form action="/server">
+        <div>
+            <h1>registration form</h1>
+            <label for="N1">1st name Name:</label>
+            <input type="text" id="N1" placeholder="first Name">
+            <!-- <br> -->
+            <label for="n2">last name:</label>
+            <input type="text" id="n2" placeholder="last name">
+            <label for=""></label>
+            <br>
+            select your gender:
+            <select name="sex" id="sex">
+                <option value="b">male</option>
+                <option value="g">female</option>
+                <option value="ga">gAY</option>
+            </select>
+            do you agree to all terms of service:
+            <input type="checkbox" id="conf" name="con">
+            <label for="conf">yes,i agree</label>
+            <button>register</button>
+        </div>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <form action="/server">
+        <h1>registration form</h1>
+        <div>
+            <label for="fname">FIRST NAME:</label>
+            <input type="text" placeholder="enter Firstname" id="fname" name="fname">
+            <label for="Lname">LAST NAME:</label>
+            <input type="text" placeholder="enter Lastname" id="Lname" name="Lname">
+        </div>
+        <div>
+            <label for="">select your gender:</label>
+            <select name="sex" id="sex">
+                <option value="m">male</option>
+                <option value="f">female</option>
+                <option value="p">others</option>
+            </select>
+        </div>
+        <div>
+            do you agree to all terms of service:
+            <input type="checkbox" name="conf" id="con">
+            <label for="con">yes i am</label>
+            <input type="checkbox" name="conf" id="con1">
+            <label for="con1">no i am not</label>
+        </div>
+        <button>register</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    /* text-align: center; */
+    /* justify-content: center;
+    display: flex;
+    flex-direction: row; */
+    font-style: italic;
+}
+#img{
+    display: flex;
+    justify-content: center;
+}
+#contain{
+    height: 400px;
+    width: 900px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: row;
+}
+.div{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    padding: 5px;
+    margin: 5px;
+}
+#div1{
+    flex-grow: none;
+    flex-shrink: none;
+}
+div2{
+    flex-grow: none;
+    flex-shrink: none;
+}
+#div3{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+#cond{
+    background-color: rgb(70, 93, 219);
+    height: 100px;
+    width: 100px;
+    border: 2px solid;
+    padding: 5px;
+    margin: 5px;
+}
+@media screen and (max-width: 300px){
+    #cond{
+        background-color: greenyellow;
+    }
+}
+@media screen and (max-width: 400px) and (min-width:300px){
+    #cond{
+        background-color: rgb(236, 80, 32);
+    }
+}
+@media screen and (min-width: 400px){
+    #cond{
+        background-color: #3f26de;
+    }
+}
+

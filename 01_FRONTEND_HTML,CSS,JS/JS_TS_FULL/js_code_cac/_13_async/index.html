@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+
+<body>
+    <h1>hello i am tharun , i am going for a run</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const greeting = function () {
+        console.log("hello i am tharun using normal funaction adn reference in timout");
+    }
+    const greeting1 = () => {
+        console.log("hello i am tharun using arrow function adn refernece in timeout");
+    }
+
+    const changeinfo = function () {
+        const h1 = document.querySelector("h1")
+        h1.innerText = "hello i am B.THARUN"
+        h1.style.backgroundColor = "#414141"
+    }
+    // changeinfo();
+    const mssg1 = setTimeout(function () {
+        console.log("hello i am tharun directly in sttimeout");
+    }, 3000)
+
+    const mssg2 = setTimeout(greeting, 3000);
+    const mssg3 = setTimeout(greeting1, 2000);
+    const mssg4 = setTimeout(changeinfo, 5000);
+
+    ///up to here to set timeouts but now how to clearit
+
+    //need reference of set timeout
+    clearTimeout(mssg4)//here so no timout ther we wont see reult so we use this wehn some event happens 
+    // in combination of events and all theses ocncepts we use it 
+
+    document.getElementById("stop").addEventListener("click", function () {
+        console.log("stopped");
+        alert("stopped");
+        clearTimeout(mssg2);
+        clearTimeout(mssg4);
+    })//if the time mentined and this event is different like if this event runs after that timeout time then we cant do anything ----as it already runs
+    //more usefull for intervals
+
+    //now here intervals
+
+    const saydate = function () {
+        console.log(Date.now());
+        // console.log(Date.formateTime());
+        console.log(Date.toString());
+    }
+    const saydetails = function (str) {
+        console.log(str);
+        console.log(Date.now());
+        // console.log(Date.formateTime());
+        console.log(Date.toString());
+    }
+
+    // setInterval(function(){
+    //     console.log(Date.now());
+    //     console.log(Date.formateTime());
+    //     console.log(Date.toString());
+    // },1000)
+    
+    const setintervll_1 = setInterval(saydate, 2000)
+    const setintervll_2 = setInterval(saydetails, 2000,"tharun")
+
+
+    clearInterval(setintervll_2);
+</script>
+
+</html>

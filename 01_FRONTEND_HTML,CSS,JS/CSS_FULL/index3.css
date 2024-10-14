@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nav{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 100px;
+    font-style: italic;
+}
+i{
+   background-color: whitesmoke;
+}

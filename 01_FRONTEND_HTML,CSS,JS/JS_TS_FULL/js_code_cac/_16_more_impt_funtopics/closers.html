@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+    // function init() {
+    //     let name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     displayName();
+    // }
+    // init();
+    
+    //lexical scoping means having ---outer(parent fuction or what ever--scope(details,properties) ) those will be availbe to the inner fucntion or child----but not reveerse
+
+
+    // function outer(){
+    //     let username = "hitesh"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);//can access as due to lexical sharing of scope 
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);//camt access as no sharing here
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);//cant access
+
+
+
+
+    //clousers---here when something is return its entire ---lexical scope returns ---not only the that function details or its scope ---even the req --or outer or lexical scope return along wiht it 
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();//here even after exexution of makefunciton adn removal of all that context --in call stack adn all how running below one means ---its because of --lexical scoping sharing--saving and returning all to this ---
+    // myFunc();//runs successfully ---called as closure function
+
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`
+
+        return function () {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+    //here onclick need an executable fun but not refernence but when we pass like fun() it runs there directly 
+    // so here we use closure property 
+
+</script>
+
+</html>

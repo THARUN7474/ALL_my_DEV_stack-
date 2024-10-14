@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  background-color: crimson;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+}
+
+#box2 {
+  background-color: rgb(214, 165, 175);
+  height: 100px;
+  width: 100px;
+}
+
+.box22 {
+  background-color: rgb(28, 108, 80);
+  height: 200px;
+  width: 200px;
+}
+#box1 {
+  background-color: greenyellow;
+  opacity: 0.7;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+#box{
+  background-color: rgb(153, 255, 0);
+  opacity: 0.7;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+#boxx1{
+  background-color: rgb(224, 171, 13);
+  height: 100px;
+  width: 100px;
+}
+
+#boxx2{
+  background-color: rgb(13, 182, 224);
+  height: 100px;
+  width: 100px;
+}
+
+
+#boxx3{
+  background-color: rgb(224, 13, 76);
+  height: 100px;
+  width: 100px;
+}
+
+
+#nav{
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4vw;
+  font-size: large;
+  font-weight: 800;
+}
+
+#part2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  gap: 1rem;
+}
+
+
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  white-space: nowrap;
+}

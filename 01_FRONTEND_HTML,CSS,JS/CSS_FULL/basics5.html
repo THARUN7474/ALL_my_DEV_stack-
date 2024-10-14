@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lv5_basics</title>
+    <style>
+        *{
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+            font-size: 15px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+
+            display: block;
+        }
+        .boxx{
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+
+            display: inline;
+        }
+        .boxxx{
+            background-color: rgb(157, 101, 33);
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+
+            display: inline-block;
+        }
+        #boxx1{
+            visibility: hidden;
+            /* display: none; */
+        }
+        #first{
+            height: 200px;
+            width: 200px;
+            background-color: peachpuff;
+            font-size: 15px;
+        }
+        #second{
+            background-color: rgb(127, 227, 227);
+            height: 50%;
+            width: 30%;
+            /* font-size: 2em; */
+            font-size: 2rem;
+        }
+        #new{
+            background-color: lightcyan;
+            height: 60vh;
+            width: 40vw;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid; 
+        }
+        .pp{
+            height: 70px;
+            width: 70px;
+            background-color: lightcoral;
+            border: 3px solid;
+            margin: 10px;
+        }
+        #p1{
+            position: static;
+        }
+        #p2{
+            position: relative;
+            top: 20px;
+            left: 90px;
+            /* z-index: 2px; */
+        }
+        #p3{
+            position: fixed;
+            top: 20px;
+            left: 90px;
+        }
+        #p4{
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .con{
+            position: relative;
+        }
+        .zzz, .zz{
+            position: absolute;
+            border: 3px solid;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .zzz{
+            background-color: red;
+            left: 20px;
+            top: 60px;
+            z-index: 2;
+        }
+        .zz{
+            background-color: aliceblue;
+            left: 60px;
+            top: 20px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <hr><p>here we cannot set height adn width like prop when we use inline display so we will use inlineblock</p><br><hr>
+    <div id="boxx1" class="boxx">box1</div>
+    <div id="boxx2" class="boxx">box2</div>
+    <div id="boxx3" class="boxx">box3</div>
+    <hr>
+    <br><br>
+    <div id="boxxx1" class="boxxx">box1</div>
+    <div id="boxxx2" class="boxxx">box2</div>
+    <div id="boxxx3" class="boxxx">box3</div>
+    <br><br><br>
+    <h1>relative units for responsive websitemaking</h1>
+
+    <div id="first">
+        first
+        <div id="second">
+            second
+        </div>
+    </div>
+    <hr><br><br>
+    
+    <div id="new">hey for responsive</div>
+    <h1>postion examples</h1><hr><br>
+    <div id="p1" class="pp">1.static</div>
+    <div id="p2" class="pp">2.relative</div>
+    <div id="p3" class="pp">3.fixed</div>
+    <div id="p4" class="pp">4.absolute</div>
+
+    <br><br><br>
+
+    <div class="con">
+        <div class="zzz">z-index 2</div>
+        <div class="zz">z-index 1</div>
+    </div>
+</body>
+</html>

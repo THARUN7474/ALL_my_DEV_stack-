@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learing 3</title>
+</head>
+<body>
+    <table border="black">
+        <caption>a table example</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">average</th>
+                <th rowspan="2">looks</th>
+            </tr>
+            <tr>
+                <!-- <th></th> -->
+                <th>height</th>
+                <th>weight</th>
+                <!-- <th></th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tharun</td>
+                <td>5.11ft</td>
+                <td>67kgs</td>
+                <td>above average</td>
+            </tr>
+            <tr>
+                <td>harsha</td>
+                <td>5.10ft</td>
+                <td>68kgs</td>
+                <td>above average</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+
+
+
+    <form>
+        <button>hello</button>
+        <!-- no action of above button as no data to submit-->
+        <form action="/server">
+            <!-- above is location where all the data go once submitted or take action  -->
+            <button>hi</button>
+            empty place
+            <!-- can have anything -->
+            <input/>
+            <br>
+            text formate
+            <input type="text" placeholder="enter anything">
+            <br>
+
+            <label>
+                username:
+                <input type="text" placeholder="enter username">
+            </label>
+
+            <!-- new way of connection classical way -->
+            <label for="username1">username1:</label>
+            <input type="text" id="username1" placeholder="enter username1">
+
+            password
+            <input type="password" placeholder="enter password">
+            <br>
+            number
+            <input type="number">
+            <br>
+            time
+            <input type="time"/>
+            <br>
+            colour
+            <input type="color" name="" id="">
+            <br>
+            <br>
+            <hr>
+
+
+            <div>
+                <label for="name">enter name :</label>
+                <input type="text" placeholder="enter name" id="name" name="names">
+            </div>
+            <div>
+                <label for="roll">enter roll no :</label>
+                <input type="number" placeholder="999999" id="roll" name="rollno">
+            </div>
+            <button>submit</button>
+
+
+
+            <button type="submit">type1submit</button>
+            <button type="button">type2button</button>
+            <button type="reset">type3reset</button>
+            <hr>
+            <!-- button using input method ...dont use it  -->
+            <input type="button" value="click me"/>
+            <input type="submit" value="click me 2"/>
+
+
+        </form>
+    </form>
+</body>
+</html>

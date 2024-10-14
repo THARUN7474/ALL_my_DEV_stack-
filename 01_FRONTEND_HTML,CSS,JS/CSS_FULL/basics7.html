@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lv7_basics</title>
+    <style>
+        #psud{
+            height: 70px;
+            width: 150px;
+            background-color: lightslategray;
+            padding: 2px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: steps(3);
+            transition-delay: 1ms;
+            /* transition: all 1s ease-in-out 0s; */
+        }
+        #psud:hover{
+            height: 80px;
+            width: 160px;
+            background-color: rgb(33, 134, 235);
+        }
+        #psud:active{
+            height: 90px;
+            width: 160px;
+            background-color: rgb(33, 226, 74);
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: peachpuff;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+            transition: all 1s ease-in;
+        }
+        #box1:hover{
+            transform: rotate(360deg);
+            transform: skew(45deg);
+        }
+        #box2:hover{
+            transform: rotateY(45deg);
+            transform: scale(2);
+            transform: scale3d(1 1 2);
+        }
+        #box3:hover{
+            transform: rotatex(45deg);
+            transform: translate(-50px, 50px);
+        }
+        #bb{
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        background-color: peachpuff;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        position: relative;
+        /* here position is must for adding animation to a element */
+        top: 10px;
+        left: 10px;
+
+        /* animation-name: moveleft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate; */
+        animation: uneven 1s ease-in-out 1ms infinite alternate;
+        }
+        @keyframes moveleft{
+            0% {left: 10px;}
+            50% {left: 100px;} 
+            70% {left: 150px}
+            100% {left: 300px}
+        }
+        @keyframes uneven {
+            0% {left: 10px; top: 0px;}
+            50% {left: 150px; top: 100px}
+            100% {left: 300px; top: 0px;}
+        }
+        </style>
+</head>
+<body>
+    <main>
+        <button id="psud" class="ll">
+            learning
+        </button>
+        <br><br><hr>
+        <br><br>
+        <div class="box" id="box1">rotate</div>
+        <div class="box" id="box2">rotate</div>
+        <div class="box" id="box3">rotate</div>
+        <br><br><hr><br><br>
+        <div id="bb">animate</div>
+    </main>
+
+</body>
+</html>
