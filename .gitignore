@@ -39,3 +39,6 @@ coverage/
 # 05_nextjs--files/
 # DATABASES/
 gitlearn/
+node_modules/
+_interviewside--videos,pdfs,lessons/
+_MIXED TOPICS--read read/

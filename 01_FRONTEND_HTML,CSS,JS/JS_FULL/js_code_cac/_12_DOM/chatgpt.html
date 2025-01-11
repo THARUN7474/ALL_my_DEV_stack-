@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <p>hero</p>
+    </div>
+
+    <script>
+        // Retrieving Elements
+        const elementById = document.getElementById('myElementId');
+        const elementsByClass = document.getElementsByClassName('myClassName');
+        const elementsByTag = document.getElementsByTagName('div');
+        const elementByQuery = document.querySelector('.mySelector');
+        const elementsByQueryAll = document.querySelectorAll('.mySelector');
+
+        // Manipulating Elements
+        // 1. Accessing Properties
+        elementById.innerHTML = 'Changed Content';
+        elementByQuery.textContent = 'Updated Text';
+
+        // 2. Adding or Removing Classes
+        elementById.classList.add('newClass');
+        elementByQuery.classList.remove('oldClass');
+
+        // 3. Adding or Removing Attributes
+        elementById.setAttribute('title', 'New Title');
+        elementByQuery.removeAttribute('data-info');
+
+        // 4. Creating New Elements
+        const newElement = document.createElement('p');
+        newElement.textContent = 'New paragraph';
+        document.body.appendChild(newElement);
+
+        // 5. Appending and Removing Elements
+        const parentElement = document.getElementById('parent');
+        const childElement = document.getElementById('child');
+        parentElement.removeChild(childElement);
+
+        // 6. Event Handling
+        function handleClick(event) {
+            console.log('Button clicked!');
+        }
+
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', handleClick);
+
+    </script>
+</body>
+
+</html>
